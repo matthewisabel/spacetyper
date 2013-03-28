@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Space Typer</title>
+		<link rel="icon" type="image/png" href="images/ship.png">
+		<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+		<script>
+		// Google WebFonts Config
+			var fontsReady = false;
+			WebFontConfig = {
+			    google: {
+			        families : ['VT323']
+			    },
+
+			    active: function() {
+			        fontsReady = true;
+			    }
+			};
+		(function() {
+		   var wf = document.createElement('script');
+		   wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		       '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		   wf.type = 'text/javascript';
+		   wf.async = 'true';
+		   var s = document.getElementsByTagName('script')[0];
+		   s.parentNode.insertBefore(wf, s);
+ 		})();
+ 		</script>
+	</head>
+	<body>
+		<script src="js/sidescroll.js"></script>
+		<script src="js/data.js"></script>
+		<div style="font-family: 'VT323', cursive; position: absolute; top: 482px; width: 512px; text-align: center; font-size: 30px; ">Space Typer</div>
+		<div style="font-family: 'VT323', cursive; position: absolute; top: 510px; width: 512px; text-align: center; font-size: 18px;">Press [spacebar] to move your ship!</div>
+	</body>
+</html>
